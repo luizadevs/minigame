@@ -1,4 +1,3 @@
-//ATENÇÃO: Esse código é impecáavel, não OUSE mudar;
 // Obtém as referências para todas as imagens de direção
 var imagensDirecao = {
     aDireita: document.getElementById('aDireita'),
