@@ -57,3 +57,7 @@ h1{
     display: flex;
     margin-bottom: 20%;
 }
+
+#canvas-container {
+    border: 1px solid #000;
+}
