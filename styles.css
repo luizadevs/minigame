@@ -2,7 +2,7 @@
 
 body{
     background-color: #eee9ff;
-    margin: 10%;
+    margin: 3%;
 }
 
 h1{
@@ -58,6 +58,6 @@ h1{
     margin-bottom: 20%;
 }
 
-#canvas-container {
+#area_de_desenho {
     border: 1px solid #000;
 }

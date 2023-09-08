@@ -34,6 +34,7 @@ var teclasPressionadas = {
 
 // Função para mover a imagem
 function moverImagem() {
+
     // Resetar a visibilidade das imagens
     for (var direcao in imagensDirecao) {
         imagensDirecao[direcao].style.display = 'none';
@@ -43,18 +44,22 @@ function moverImagem() {
         imagensDirecao.aDireita.style.display = 'block';
         direcaoAtual = 'aDireita';
         posX += velocidade;
+
     } else if (teclasPressionadas.ArrowLeft) {
         imagensDirecao.aEsquerda.style.display = 'block';
         direcaoAtual = 'aEsquerda';
         posX -= velocidade;
+
     } else if (teclasPressionadas.ArrowUp) {
         imagensDirecao.aCima.style.display = 'block';
         direcaoAtual = 'aCima';
         posY -= velocidade;
+
     } else if (teclasPressionadas.ArrowDown) {
         imagensDirecao.aBaixo.style.display = 'block';
         direcaoAtual = 'aBaixo';
         posY += velocidade;
+
     }
 
     // Atualiza a posição da imagem de acordo com a direção

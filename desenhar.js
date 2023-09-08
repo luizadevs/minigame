@@ -1,6 +1,6 @@
 const canvas = new fabric.Canvas('area_de_desenho', {
-    width: 500,
-    height: 500
+    width: 1200,
+    height: 400
 });
 
 canvas.isDrawingMode = true;
