@@ -99,3 +99,18 @@ document.addEventListener('keyup', function (event) {
 
 // Inicia o loop principal para mover a imagem
 moverImagem();
+
+// Função para mover o personagem automaticamente a cada 2 segundos
+function moverAutomaticamente() {
+    // Implemente a lógica para mover o personagem automaticamente aqui.
+    // Por exemplo, você pode definir uma direção específica.
+    // Neste exemplo, vamos mover para a direita.
+    direcaoAtual = 'aDireita';
+    posX += velocidade;
+
+    // Atualize a posição da imagem
+    imagensDirecao[direcaoAtual].style.transform = `translate(${posX}px, ${posY}px)`;
+}
+
+// Inicie o movimento automático a cada 2 segundos usando setInterval
+setInterval(moverAutomaticamente, 2000);

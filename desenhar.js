@@ -3,6 +3,21 @@ const canvas = new fabric.Canvas('area_de_desenho', {
     height: 400
 });
 
+function updateCanvasSize() {
+    const isMobile = window.innerWidth < 768; // Define um limite de largura para dispositivos móveis (por exemplo, 768px).
+    
+    if (isMobile) {
+        canvas.setWidth(800);
+        canvas.setHeight(1000);
+    } else {
+        canvas.setWidth(400);
+        canvas.setHeight(200);
+    }
+    
+    canvas.renderAll();
+}
+
+
 canvas.isDrawingMode = true;
 canvas.freeDrawingBrush.width = 2; // Defina a largura do pincel
 
@@ -15,3 +30,6 @@ document.addEventListener('keydown', (event) => {
         canvas.clear();
     }
 });
+
+// Atualize o tamanho do canvas quando a janela for redimensionada
+window.addEventListener('resize', updateCanvasSize);
